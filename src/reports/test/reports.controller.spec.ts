@@ -1,4 +1,4 @@
-import { ReportsController } from './reports.controller';
+import { ReportsController } from '../reports.controller';
 import { Test, TestingModule } from '@nestjs/testing';
 
 describe('ReportsController', () => {
