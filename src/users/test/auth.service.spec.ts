@@ -71,9 +71,9 @@ describe('AuthService', () => {
       Promise.resolve([
         { email: 'aha@gmail.com', password: 'laskdjf' } as User,
       ]);
-    await expect(
-      service.signin('aha@gmail.com', 'passowrd'),
-    ).rejects.toThrow(BadRequestException);
+    await expect(service.signin('aha@gmail.com', 'passowrd')).rejects.toThrow(
+      BadRequestException,
+    );
   });
 
   it('returns a user if correct password is provided', async () => {
